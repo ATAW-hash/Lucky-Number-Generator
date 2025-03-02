@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Lottery Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎰 Lucky Lottery Generator 🎰</h1>
+
+        <label for="lotteryType">Choose Lottery Type:</label>
+        <select id="lotteryType">
+            <option value="4D">4D</option>
+            <option value="5D">5D</option>
+            <option value="6D">6D</option>
+            <option value="Supreme Toto">Supreme Toto</option>
+            <option value="Power Toto">Power Toto</option>
+            <option value="Star Toto">Star Toto</option>
+        </select>
+
+        <label for="birthdate">Enter Your Birthdate:</label>
+        <input type="date" id="birthdate" class="date">
+
+        <label for="playdate">Enter Playdate:</label>
+        <input type="date" id="playdate" class="date">
+
+        <button onclick="generateNumbers()">🔮 Generate Lucky Numbers</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
